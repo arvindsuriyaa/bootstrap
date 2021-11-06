@@ -1,0 +1,493 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+.row{
+    margin-bottom: 0;
+    margin-left:0px;
+    margin-right:0px;
+}
+h1{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin: 20px;
+    color: white;
+}
+#sidenav{
+    position:fixed;
+    height:100%;
+    background-color: rgb(50,54,64);
+}
+.sideBar{
+    padding-left:0px;
+}
+.sideBar li{
+    list-style-type: none;
+    padding: 10px 0;
+    font-size: 14px;
+}
+.sideBar li a{
+    text-decoration: none;
+    color: rgb(111,121,133);
+}
+.li-content{
+    display:flex;
+    justify-content: space-between;
+}
+.sideBar li a:hover{
+    color:white;
+}
+.DashboardLink-Dropdown{
+    padding-top: 4px;
+    display: none;
+}
+.DashboardLink:hover .DashboardLink-Dropdown{
+    display: block;
+}
+.arrowDown{
+    margin-top:5px;
+}
+#mainSection{
+    padding:0px;
+    margin-left: 16.66%;
+    background-color: #0000ff1f;
+}
+.search-section{
+    height: 100%;
+    padding: 20px;
+    display: flex;
+}
+.bar-icon{
+    font-size: 20px;
+    cursor: pointer;
+    color:rgb(150, 147, 149);
+}
+#search {
+    outline: 0;
+    box-sizing: border-box;
+    border:  #ccc;
+    border-radius: 30px;
+    font-size: 13px;
+    background-color: rgb(243,237,254);
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 32px;
+    padding-left: 20px;
+    margin-top:-4px;
+    box-shadow: none;
+    margin-left:18px;
+    padding-right: 50px;
+}
+.search-button{
+    border:none;
+    font-size:19px;
+    background-color:rgb(243,237,254);
+    margin-left: -45px;
+    color: #ccc;
+    cursor: pointer;
+}
+#searchBar{
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    background-color: white;
+    border-bottom: 2px solid #0000000d;
+}
+.btn-floating i {
+    font-size: 1.4rem;
+}
+span.badge{
+    min-width: 1rem;
+    padding: 0 7px;
+    margin-left: 14px;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 22px;
+    height: 20px;
+    float: right;
+    box-sizing: border-box;
+}
+nav ul a.btn-floating {
+    margin-top: -2px;
+    margin-left: 0px;
+}
+.notification1{
+    position: absolute;
+    right: 125px;
+    top: 8px;
+}
+.notification2{
+    position: absolute;
+    right: 66px;
+    top: 7px;
+}
+#dashboard{
+    border-bottom: 2px solid #00000012;
+    background-color: white;
+}
+.userDashboard{
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.dashBoardTitle{
+    height: 38px;
+    border-left-color: blue;
+    border-left-style: solid;
+    border-left-width: 5px;
+    display: flex;
+    align-items: center;
+}
+.user-icon{
+    border:none;
+    background-color:white;
+    color: rgb(150, 147, 149);
+    font-size: 22px;
+    padding: 20px 7px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.settings{
+    padding-right: 30px;
+}
+.notification{
+    position : relative;
+    font-family: 'Roboto', sans-serif;
+    bottom: 15px;
+    right: 7px;
+    width: 15px;
+    height: 15px;
+    font-size: 13px;
+    background-color: blue;
+    color:white;
+    border-radius: 50%;
+    display: inline-block;
+    margin: -5px;
+}
+.dashBoardTitle{
+    height: 38px;
+    border-left-color: blue;
+    border-left-style: solid;
+    border-left-width: 5px;
+    display: flex;
+    align-items: center;
+}
+.title1{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 20px;
+    color: rgb(122,122,122);
+}
+.title2{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; 
+    color:rgb(142,110,250);
+    margin-top: 5px;
+}
+.title3{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif; 
+    color:rgb(155, 149, 149);
+    margin-top: 5px;
+}
+.userProfile{
+    height: 65px;
+    background-color: rgb(142,110,250);
+    width: 240px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.downArrow{
+    font-size: 18px;
+}
+#circle{
+    display: inline-block;
+    height:60px;
+    width:60px;
+    border-radius: 0px 0px 100% 0px;
+    background-color: blue;
+    position: absolute;
+}
+#coinValue{
+    margin-left:0px;
+    margin-right: 0;
+    height: 220px;
+    margin:10px;
+    margin-bottom: 20px;
+}
+.box{
+    background-color: white;
+    width: 95%;
+    height: 220px;
+    margin: 10px auto;
+}
+.icon{
+    margin: 16px;
+    font-size: 25px;
+    color: white;
+}
+.miningDashboard{
+    width: 80%;
+    margin-left: 70px;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+tr{
+    border-bottom:none;
+}
+td, th {
+    padding: 0px 5px;
+    padding-top: 24px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+.miningDashboard .twoFourH{
+    padding-left: 63px;
+}
+.miningDashboard .rate{
+    padding-left: 64px;font-size: 11px;
+}
+.price {
+    color: rgb(78, 78, 78);
+    font-size: 22px;
+}
+.heading1 {
+    background-color: rgb(224, 223, 223);
+    padding: 0 6px;
+    font-size: 12px;
+}
+#analysis{
+    margin-left:0px;
+    margin-right: 0;
+    height:251px;
+    margin:10px;
+    margin-bottom: 20px;
+}
+.chart{
+    background-color: white;
+    width: 97.5%;
+    height: 251px;
+    margin: 1.1%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+select{
+    background-image:url("Assets/dropdown-arrow-icon-18.jpg");
+    background-position: right;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    width: 100px;
+    padding-left: 5px;
+    outline:none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 10%;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif; 
+    height:1.5rem;
+    background-color: rgb(221,221,221);
+    border: 1px solid #0000002e;
+}
+.coinDistribution{
+    background-color: white;
+    height: 251px;
+    width: 94%;
+    padding: 15px;
+    margin: 3.4% auto;
+}
+#statistics{
+    margin-left:0px;
+    margin-right: 0;
+    height:390px;
+    margin:10px;
+    margin-bottom: 20px;
+}
+.marketTrend{
+    height: 380px;
+    width: 98%;
+    margin: 10px auto;
+    background-color: white;
+}
+.marketDuration{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 23px;
+}
+.marketDuration span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+.marketTable{
+    overflow-y: scroll;
+    height: 320px;
+    width: 97.5%;
+}
+.marketAnalysis{
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 22px;
+    color: #695f5f;
+    text-align: center;
+    width: 96.7%;
+}
+.marketAnalysis td,th{
+    padding: 10px 44px;
+    background-color: rgb(242,242,242);
+    font-size: 15px;
+    border-bottom: 10px solid white;
+    text-align: center;
+}
+.marketAnalysis th{
+    padding: 18px 45;
+}
+@media screen and (max-width:700px){
+    #mainSection{
+        margin:0;
+    }
+    .userProfile {
+        /* display: none; */
+    }
+    nav ul a.btn, nav ul a.btn-large, nav ul a.btn-small, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0px;
+    }
+    nav ul li {
+        margin-right: -10px;
+        transition: background-color .3s;
+        float: left;
+        padding: 0px;
+    }
+    .user-icon {
+        padding: 18px 3px;
+        font-size: 17px;
+    }
+    .user-icon {
+        padding: 18px 3px;
+        font-size: 17px;
+    }
+    .notification1 {
+        position: absolute;
+        right: 62px;
+        top: 8px;
+    }
+    .notification2 {
+        position: absolute;
+        right: 28px;
+        top: 8px;
+    }
+    #search{
+        width: 50%;
+        margin-left: 10px;
+    }
+    #coinValue {
+        height: 702px;
+    }
+    #statistics{
+        height: 330px;
+    }
+    .userProfile{
+        height: 55px;
+        background-color: rgb(255, 255, 255);
+        width: 70px;
+    }
+    .userProfile span, .downArrow {
+        display:none;
+    }
+    .title1{
+        font-size: 16px;
+    }
+    .title2, .title3{
+        font-size: 12px;
+        margin-top:0px;
+    }
+    .userProfile img{
+        height: 40px;
+    }
+    .box, .coinDistribution{
+        width:100%;
+    }
+    .chart{
+        width: 99%;
+        height: 100%;
+        margin: 2.5% 0.6%;
+    }
+    .marketTable{
+        display: none;
+    }
+    select{
+        height: 1.6rem;
+    }
+    .marketDuration{
+        padding: 15px 5px;
+    }
+    .marketDuration span{
+        font-size: 16px;
+    }
+    .marketTrend{
+        height: 320px;
+    }
+    .dashboard-icon{
+        margin-left: -20px;
+        margin-top: 3px;
+        padding-right: 10px;
+    }
+    .search-button{
+        margin-left: -171px;
+    }
+    .miningDashboard{
+        margin-left: 16%;
+    }
+    td,th {
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width:900px){
+    #mainSection {
+        padding: 0px;
+        margin-left: 0;
+    }
+    .miningDashboard {
+        margin-left: 55px;
+    }
+    .miningDashboard .twoFourH{
+        padding-left: 0px;
+    }
+    .miningDashboard .rate{
+        padding-left: 0px;font-size: 11px;
+    }
+    .notification1 {
+        position: absolute;
+        right: 125px;
+        top: 8px;
+    }
+    .notification2 {
+        position: absolute;
+        right: 66px;
+        top: 7px;
+    }
+    #coinValue {
+        height: 710px;
+    }
+}
+
